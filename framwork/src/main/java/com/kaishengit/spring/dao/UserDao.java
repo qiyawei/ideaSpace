@@ -1,6 +1,6 @@
 package com.kaishengit.spring.dao;
 
-public class UserDao {
+public class UserDao implements IuserDao{
     public void init(){
         System.out.println("init.....");
 

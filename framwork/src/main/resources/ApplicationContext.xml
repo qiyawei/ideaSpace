@@ -6,15 +6,44 @@
 
 
     <bean id="userDao" class="com.kaishengit.spring.dao.UserDao" scope="singleton"/>
-    <bean id="userService" class="com.kaishengit.spring.service.UserService">
+    <bean id="bookDao" class="com.kaishengit.spring.dao.BookDao"/>
+    <bean id="userService" class="com.kaishengit.spring.service.UserService" >
+        <constructor-arg name="bookDao" ref="bookDao"/>
+        <constructor-arg name="userDao" ref="userDao"/>
+
+    <!--<bean id="userService" class="com.kaishengit.spring.service.UserService">
+        &lt;!&ndash;构造方法注入&ndash;&gt;
+        <constructor-arg name="bookDao" ref="bookDao"/>
+        <constructor-arg name="userDao" ref="userDao"/>-->
+
+        <!--<constructor-arg index="0" ref="bookDao"/>
+        <constructor-arg index="1" ref="userDao"/>-->
+
+       <!-- <constructor-arg type="com.kaishengit.spring.dao.IuserDao" ref="userDao"/>
+        <constructor-arg type="com.kaishengit.spring.dao.BookDao" ref="bookDao"/>-->
+        <!--<constructor-arg type="java.lang.String" value="jack"/>
+        <constructor-arg type="java.util.List">
+            <list>
+                <value>aa</value>
+                <value>bb</value>
+            </list>
+        </constructor-arg>
+-->
+
+        <!--set 注入-->
        <!-- <property name="userDao" ref="userDao"/>-->
         <!--<property name="userDao">
             <ref bean="userDao"/>
         </property>-->
-        <property name="userDao">
+      <!--  <property name="userDao">
             <bean class="com.kaishengit.spring.dao.UserDao"/>
-        </property>
+        </property>-->
     </bean>
+
+
+
+
+
     <bean id="demoDao" class="com.kaishengit.spring.dao.DemoDao">
         <property name="port" value="3306"/>
         <property name="name" value="jack"/>
@@ -42,9 +71,7 @@
                 <prop key="a2">b2</prop>
             </props>
         </property>
-
     </bean>
-
 
 
 
