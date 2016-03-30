@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="userDao" class="com.kaishengit.spring.dao.UserDao" scope="singleton"/>
+    <bean id="userService" class="com.kaishengit.spring.service.UserService">
+       <!-- <property name="userDao" ref="userDao"/>-->
+        <!--<property name="userDao">
+            <ref bean="userDao"/>
+        </property>-->
+        <property name="userDao">
+            <bean class="com.kaishengit.spring.dao.UserDao"/>
+        </property>
+    </bean>
+    <bean id="demoDao" class="com.kaishengit.spring.dao.DemoDao">
+        <property name="port" value="3306"/>
+        <property name="name" value="jack"/>
+        <property name="list">
+            <list>
+                <value>x</value>
+                <value>y</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>aa</value>
+                <value>bb</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="x1" value="y1"/>
+                <entry key="x2" value="y2"/>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="a1">b1</prop>
+                <prop key="a2">b2</prop>
+            </props>
+        </property>
+
+    </bean>
+
+
+
+
+
+</beans>
