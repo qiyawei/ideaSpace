@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Maven: commons-io:commons-io:2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/commons-logging" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$MAVEN_REPOSITORY$/commons-logging" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

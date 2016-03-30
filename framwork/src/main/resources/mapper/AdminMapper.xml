@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaishengit.dao.AdminMapper">
+    <cache/>
+
+    <select id="findById" parameterType="int" resultType="Admin">
+        select * from admin where id=#{id}
+    </select>
+
+    <insert id="save" parameterType="Admin" useGeneratedKeys="true" keyProperty="id">
+        insert into admin(name,pwd) values(#{name},#{pwd})
+    </insert>
+
+    <delete id="del" parameterType="int">
+        delete from admin where id=#{id}
+    </delete>
+    
+    <update id="update" parameterType="Admin">
+        update admin set name=#{name}, pwd=#{pwd} where id=#{id}
+    </update>
+
+    <select id="findAll" resultType="list" resultMap="adminMap">
+        select id,name,pwd from admin
+    </select>
+    <resultMap id="adminMap" type="Admin">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="pwd" column="pwd"/>
+    </resultMap>
+
+    <select id="findAllByName" parameterType="String" resultType="Admin">
+        select *from admin where name=#{name}
+    </select>
+
+    <select id="findByNameAndPwd" parameterType="map" resultType="Admin">
+        select *from admin where name=#{name} and pwd=#{pwd}
+    </select>
+
+    <select id="findByNameAndPwd2"  resultType="Admin">
+        select *from admin where name=#{param1} and pwd=#{param2}
+    </select>
+
+    <select id="findByLikeName" parameterType="string" resultType="Admin">
+        select *from admin where name like '%'+#{name}+'%'
+    </select>
+</mapper>
+

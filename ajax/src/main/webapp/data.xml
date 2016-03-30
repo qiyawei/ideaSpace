@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student id="1">
+        <name>Tom</name>
+        <score>99</score>
+       <de>
+          <![CDATA[
+            <div>kkk</div>
+          ]]>
+       </de>
+    </student>
+    <!-- 注释 -->
+    <student id="2">
+        <name>Rose</name>
+        <score>56</score>
+    </student>
+    <student id="3">
+        <name>lisi</name>
+        <score>78</score>
+    </student>
+</students>
