@@ -1,18 +1,18 @@
 package com.kaishengit.spring.service;
 
 import com.kaishengit.spring.dao.BookDao;
-import com.kaishengit.spring.dao.IuserDao;
+import com.kaishengit.spring.dao.IUserDao;
 import com.kaishengit.spring.dao.UserDao;
 
 /**
  * Created by qiyawei on 2016/3/30.
  */
 public class UserService {
-    private UserDao userDao;
+    private IUserDao userDao;
     private BookDao bookDao;
 
-    public UserService(BookDao bookDao,UserDao userDao){
-        this.userDao = userDao;
+    public UserService(BookDao bookDao,UserDao userDao1){
+        this.userDao = userDao1;
         this.bookDao = bookDao;
     }
 
