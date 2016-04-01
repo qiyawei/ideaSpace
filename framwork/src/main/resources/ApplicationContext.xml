@@ -7,9 +7,9 @@
 
     <bean id="userDao" class="com.kaishengit.spring.dao.UserDao" scope="singleton"/>
     <bean id="bookDao" class="com.kaishengit.spring.dao.BookDao"/>
-    <bean id="userService" class="com.kaishengit.spring.service.UserService" >
-        <constructor-arg name="bookDao" ref="bookDao"/>
-        <constructor-arg name="userDao" ref="userDao"/>
+    <bean id="userService" class="com.kaishengit.spring.service.UserService" autowire="constructor"/>
+       <!-- <constructor-arg name="bookDao" ref="bookDao"/>
+        <constructor-arg name="userDao" ref="userDao"/>-->
 
     <!--<bean id="userService" class="com.kaishengit.spring.service.UserService">
         &lt;!&ndash;构造方法注入&ndash;&gt;
@@ -38,7 +38,7 @@
       <!--  <property name="userDao">
             <bean class="com.kaishengit.spring.dao.UserDao"/>
         </property>-->
-    </bean>
+   <!-- </bean>-->
 
 
 
