@@ -8,11 +8,11 @@ import com.kaishengit.spring.dao.UserDao;
  * Created by qiyawei on 2016/3/30.
  */
 public class UserService {
-    private IuserDao userDao;
+    private UserDao userDao;
     private BookDao bookDao;
 
-    public UserService(BookDao bookDao,UserDao userDao1){
-        this.userDao = userDao1;
+    public UserService(BookDao bookDao,UserDao userDao){
+        this.userDao = userDao;
         this.bookDao = bookDao;
     }
 
