@@ -40,5 +40,7 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.16.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.16.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aspects:3.2.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.7.4" level="project" />
   </component>
 </module>
