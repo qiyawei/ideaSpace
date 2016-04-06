@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaishengit.dao.MajorMapper">
+        <select id="findById" parameterType="int" resultMap="MajorMap">
+                select sub.id,sub.name,sub.classhour,sub.majorid,maj.id as typeid,maj.name as typename
+                from subject as sub inner join major as maj on sub.majorid=maj.id
+                where maj.id=#{id}
+        </select>
+        <resultMap id="MajorMap" type="Major" >
+                <id property="id" column="typeid"/>
+                <result property="name" column="typename"/>
+                <collection property="list" ofType="Subject">
+                        <id property="id" column="id"/>
+                        <result property="name" column="name"/>
+                        <result property="classhour" column="classhour"/>
+                        <result property="majorid" column="majorid"/>
+                </collection>
+        </resultMap>
+        <!--<select id="findAll" resultType="list" resultMap="MajorMap1">
+                select sub.id,sub.name,sub.classhour,sub.majorid,maj.id as typeid,maj.name as typename
+                from subject as sub inner join major as maj on sub.majorid=maj.id
+        </select>
+        <resultMap id="MajorMap1" type="Major" >
+                <id property="id" column="typeid"/>
+                <result property="name" column="typename"/>
+                <collection property="list" ofType="Subject">
+                        <id property="id" column="id"/>
+                        <result property="name" column="name"/>
+                        <result property="classhour" column="classhour"/>
+                        <result property="majorid" column="majorid"/>
+                </collection>
+        </resultMap>-->
+</mapper>
