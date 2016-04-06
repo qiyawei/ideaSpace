@@ -21,6 +21,8 @@
 <script>
     $(function(){
 
+
+
         var editer = new Simditor({
             textarea:$("#editer"),
             defaultImage:'/js/editer/images/image.png',
