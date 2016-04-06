@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6647032a-9698-4d37-9c56-eb1ca0eb7478" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ajax_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ajax_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/src/main/webapp/edit.jsp" afterPath="$PROJECT_DIR$/ajax/src/main/webapp/edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="5c28b1f6-71c1-485c-b628-f20199ac38ec" name="Failed commit: Default" comment="继续练习" />
     <ignored path="ideaSpace.iws" />
@@ -104,8 +104,8 @@
       <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajax/src/main/webapp/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75" vertical-offset="329" max-vertical-offset="1125">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.44808742" vertical-offset="329" max-vertical-offset="1150">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/src/com/kaishengit/web/ImportXlsServlet.java" />
         <option value="$PROJECT_DIR$/web/src/com/kaishengit/test/Test6.java" />
         <option value="$PROJECT_DIR$/web/src/com/kaishengit/web/QiniuServlet.java" />
@@ -212,6 +211,7 @@
         <option value="$PROJECT_DIR$/framwork/src/main/java/com/kaishengit/controller/UserController.java" />
         <option value="$PROJECT_DIR$/ajax/pom.xml" />
         <option value="$PROJECT_DIR$/ajax/src/main/java/com/kaishengit/web/EditServlet.java" />
+        <option value="$PROJECT_DIR$/ajax/src/main/webapp/edit.jsp" />
       </list>
     </option>
   </component>
@@ -411,7 +411,7 @@
     <property name="project.structure.side.proportion" value="0.2255466" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="preferences.editor" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
@@ -1148,7 +1148,7 @@
       <workItem from="1459871335837" duration="1381000" />
       <workItem from="1459910281860" duration="50000" />
       <workItem from="1459922412356" duration="311000" />
-      <workItem from="1459949841190" duration="6012000" />
+      <workItem from="1459949841190" duration="6494000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Spring依赖">
       <created>1459314519369</created>
@@ -1228,11 +1228,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459955718715</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="继续练习">
+      <created>1459956187237</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1459956187237</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314611000" />
+    <option name="totallyTimeSpent" value="315093000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1255,13 +1261,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7924837" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7924837" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8513072" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1704,8 +1710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/src/main/webapp/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75" vertical-offset="329" max-vertical-offset="1125">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.44808742" vertical-offset="329" max-vertical-offset="1150">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
