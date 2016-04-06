@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6647032a-9698-4d37-9c56-eb1ca0eb7478" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6647032a-9698-4d37-9c56-eb1ca0eb7478" name="Default" comment="" />
     <list id="5c28b1f6-71c1-485c-b628-f20199ac38ec" name="Failed commit: Default" comment="继续练习" />
     <ignored path="ideaSpace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1147,7 +1145,7 @@
       <workItem from="1459871335837" duration="1381000" />
       <workItem from="1459910281860" duration="50000" />
       <workItem from="1459922412356" duration="311000" />
-      <workItem from="1459949841190" duration="6893000" />
+      <workItem from="1459949841190" duration="7079000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Spring依赖">
       <created>1459314519369</created>
@@ -1249,7 +1247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315492000" />
+    <option name="totallyTimeSpent" value="315678000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
