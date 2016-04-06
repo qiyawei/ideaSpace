@@ -8,9 +8,23 @@
            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-    <bean id="userDao" class="com.kaishengit.spring.dao.UserDao" scope="singleton"/>
+   <!-- <bean id="userDao" class="com.kaishengit.spring.dao.UserDao" scope="singleton"/>
     <bean id="bookDao" class="com.kaishengit.spring.dao.BookDao"/>
-    <bean id="userService" class="com.kaishengit.spring.service.UserService" autowire="constructor"/>
+    <bean id="userService" class="com.kaishengit.spring.service.UserService" autowire="constructor"/>-->
+    <bean id="myAspect" class="com.kaishengit.MyAspect"/>
+    <bean id="userDao" class="com.kaishengit.spring.dao.UserDao"/>
+
+    <aop:config>
+        <aop:aspect ref="myAspect">
+            <aop:pointcut id="myPonitcut" expression="execution(* com.kaishengit.spring..*.*(..))"/>
+           <!-- <aop:before method="beforeAdvice" pointcut-ref="myPonitcut"/>
+            <aop:after-returning method="afterReturning" pointcut-ref="myPonitcut" returning="object"/>
+            <aop:after-throwing method="throwAdvice" pointcut-ref="myPonitcut" throwing="ex"/>
+            <aop:after method="finalAdvice" pointcut-ref="myPonitcut"/>-->
+            <aop:around method="aroundAdvice" pointcut-ref="myPonitcut"/>
+        </aop:aspect>
+       
+    </aop:config>
 
 
 

@@ -22,6 +22,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.16.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:3.2.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.7.4" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.2.16.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.2.16.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.12.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.12.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

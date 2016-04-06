@@ -8,14 +8,15 @@ public class Test5 {
         PreparedStatement statement = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql:///db_20","root","123123");
+            connection = DriverManager.getConnection("jdbc:mysql:///db_20","root","123456");
         } catch (Exception e) {
             e.printStackTrace();
         }
     //开启事务
+
         try {
 
-            connection.setAutoCommit(true);
+            connection.setAutoCommit(false);
             String sql1 = "insert into user(username) value(?)";
             statement = connection.prepareStatement(sql1);
             statement.setObject(1,"jim1");
