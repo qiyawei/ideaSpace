@@ -20,7 +20,7 @@
 <script src="/js/editer/scripts/simditor.min.js"></script>
 <script>
     $(function(){
-        
+
 
         var editer = new Simditor({
             textarea:$("#editer"),
