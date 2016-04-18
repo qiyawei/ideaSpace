@@ -26,5 +26,9 @@
         <module name="framwork" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ajax" target="1.5" />
+      <module name="framwork" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -7,5 +7,6 @@
 <body>
 <h1>${name}</h1>
 <h1><a href="/users/new">添加</a></h1>
+<h1><a href="/users/1">根据id查找</a></h1>
 </body>
 </html>

@@ -13,10 +13,11 @@ import java.io.Reader;
  * Created by qiyawei on 2016/3/23.
  */
 public class SqlSessinUtil {
+    //public static int a;
     private static SqlSessionFactory sessionFactory = buildSessionFactory();
 
     private static SqlSessionFactory buildSessionFactory() {
-
+        System.out.println(1111);
         try {
             Reader reader = Resources.getResourceAsReader("mybatis.xml");
             return new SqlSessionFactoryBuilder().build(reader);

@@ -5,6 +5,8 @@ import com.kaishengit.entity.Admin;
 import com.kaishengit.spring.dao.IuserDao;
 import com.kaishengit.spring.dao.UserDao;
 import com.kaishengit.spring.service.UserService;
+import com.kaishengit.util.SqlSessinUtil;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,10 +17,15 @@ import java.util.List;
  */
 public class Test5 {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext1.xml");
-        AdminDao adminDao = (AdminDao) applicationContext.getBean("adminDao");
-        Admin admin = adminDao.findById1(1);
-        System.out.println(admin.getName());
+        SqlSessionFactory sessionFactory=  SqlSessinUtil.sessionFactory;
+        SqlSessionFactory sessionFactory1=  SqlSessinUtil.sessionFactory;
+
+
+
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("ApplicationContext1.xml");
+//        AdminDao adminDao = (AdminDao) applicationContext.getBean("adminDao");
+//        Admin admin = adminDao.findById1(1);
+//        System.out.println(admin.getName());
         //adminDao.delete(16);
        /* List<Admin> list = adminDao.findAll1();
         System.out.println(list.size())*/;

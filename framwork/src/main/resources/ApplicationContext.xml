@@ -12,7 +12,7 @@
     <bean id="bookDao" class="com.kaishengit.spring.dao.BookDao"/>
     <bean id="userService" class="com.kaishengit.spring.service.UserService" autowire="constructor"/>-->
     <bean id="myAspect" class="com.kaishengit.MyAspect"/>
-    <bean id="userDao" class="com.kaishengit.spring.dao.UserDao"/>
+    <!--<bean id="userDao" class="com.kaishengit.spring.dao.UserDao"/>-->
 
     <aop:config>
         <aop:aspect ref="myAspect">
